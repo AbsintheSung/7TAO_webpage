@@ -1,4 +1,5 @@
     //頭
+      import sparkler from '../assets/images/sparkler.png'
       function headerImg(imgurl){
         let img = new Image();
         img.src = imgurl
@@ -50,7 +51,8 @@
         link.href=a_link
         link.classList.add('text-dark')
         img.alt = '活動Icon'
-        img.src="../assets/images/sparkler.png"
+        // img.src="../assets/images/sparkler.png"
+        img.src=sparkler
         img.classList.add('card-icon')
         span.classList.add("noto-tc-serif","fw-bold","ms-1")
         span.textContent = type
