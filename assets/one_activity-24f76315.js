@@ -1,0 +1,1 @@
+import"./main-25dbf889.js";import{l}from"./label_btn-d7a7e10e.js";let n=document.querySelector(".label-btn-list"),t=[{name:"聯誼",link:"#"},{name:"美食",link:"#"},{name:"戶外",link:"#"},{name:"交通旅遊",link:"#"}];t.forEach(function(e){l.mountLi(e,n)});
