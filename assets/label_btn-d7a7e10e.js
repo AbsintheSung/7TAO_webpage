@@ -1,1 +1,0 @@
-function a(e){let t=document.createElement("a");return t.href=e.link,t.classList.add("py-1","px-3","px-md-4","text-primary-3","d-block","w-100"),t.textContent=`${e.name}`,t}function i(){let e=document.createElement("li");return e.classList.add("noto-tc-serif","fw-bold"),e}function r(e,t){let n=a(e),l=i();return l.appendChild(n),t.appendChild(l)}const c={mountLi:r};export{c as l};
