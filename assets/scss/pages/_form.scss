@@ -1,50 +1,3 @@
-// .pay-list{
-//     position: relative;
-// }
-// .pay-list::after{
-//     content: '';
-//     position: absolute;
-//     top: 35%;
-//     left: 50%;
-//     transform: translate(-50%,-50%);
-//     background-color: $primary-3;
-//     height: 2px;
-//     width: 90%;
-//     z-index: 0;
-//     @include Small{
-//         top: 30%;
-//         width: 80%;
-//     }
-// }
-
-// .pay-box{
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: center;
-//     align-items: center;
-//     &__item{ 
-//         position: relative;
-//         z-index: 1;
-//         border: 1px solid $primary-3;
-//         width: 48px;
-//         height: 48px;
-//         display: flex;
-//         justify-content: center;
-//         align-items: center;
-//         background-color: $primary-0;
-//         @include Small{
-//             width: 32px;
-//             height: 32px;
-//         }
-//     }
-//     &:first-child{
-//         .pay-box__item{
-//             background-color:$primary-3  ;
-//             color:$primary-1 ;
-//         }
-//     }
-
-// }
 .form-paybox{
     &:first-child{
         .pay-box__item{
@@ -54,19 +7,6 @@
     }
 }
 
-// .pay-title{
-//     font-size: 48px;
-//     @include Small{
-//         font-size: 32px;
-//     }
-// }
-
-// .pay-table{
-//     width: 50%;
-//     @include Small{
-//         width: 100%;
-//     }
-// }
 .user-imfo{
     &__img{
         text-align: center;
@@ -78,33 +18,3 @@
     }
 }
 
-// .pay-form{
-//     // width: 50%;
-//     // @include Small{
-//     //     width: 100%;
-//     // }
-//     .form-btn{
-//         width: 50%;
-//         font-size: 20px;
-//         background-color:$primary-3 ;
-//         color:$primary-0;
-//         @include Large{
-//             width:100%;
-//         }
-//         &:hover{
-//             color:$primary-1;
-//         }
-//     }
-//     .cancel-btn{
-//         color:$primary-3 ;
-//         font-size: 18px;
-//         &:hover{
-//             text-decoration: underline;
-//         }
-//     }
-// }
-
-// .form-control:focus {
-//     border-color: #000000;
-//     box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 1);
-// }

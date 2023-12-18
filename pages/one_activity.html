@@ -147,16 +147,25 @@
         import labelCreate from '../js/label_btn.js'
 
         let oneActivityLabelBtn = document.querySelector('.label-btn-list')
+        let fragment = document.createDocumentFragment()
         let labelData = [
             {name:"聯誼",link:"#"},
             {name:"美食",link:"#"},
             {name:"戶外",link:"#"},
             {name:"交通旅遊",link:"#"},
         ]
+
+        // labelData.forEach(function(item){
+        //     labelCreate.mountLi(item,oneActivityLabelBtn)
+        // })
         
-        labelData.forEach(function(item){
-            labelCreate.mountLi(item,oneActivityLabelBtn)
-        })
+        function mountlabelBtnDom(){
+            labelData.forEach(function(item){
+                fragment.appendChild( labelCreate.mountLi(item))
+            })
+            oneActivityLabelBtn.appendChild(fragment)
+        }
+        mountlabelBtnDom()
      
 
     </script>

@@ -1,3 +1,4 @@
+let fragment = document.createDocumentFragment()
 function createLabel_a(obj){
     let a_link = document.createElement('a')
     a_link.href = obj.link
@@ -10,11 +11,18 @@ function createLabel_li(){
     li.classList.add('noto-tc-serif','fw-bold')
     return li
 }
-function mountLi(obj,domElement){
+// function mountLi(obj,domElement){
+//     let link = createLabel_a(obj);
+//     let li = createLabel_li();
+//     li.appendChild(link)
+//     return domElement.appendChild(li)
+// }
+function mountLi(obj){
     let link = createLabel_a(obj);
     let li = createLabel_li();
-    li.appendChild(link)
-    return domElement.appendChild(li)
+    fragment.appendChild(link)
+    li.appendChild(fragment)
+    return li
 }
 
 export default{

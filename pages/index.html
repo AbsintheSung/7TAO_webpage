@@ -398,6 +398,7 @@
     <script type="module" src="../main.js"></script>
     <script type="module">
       import cardList from '../js/card.js'
+      let fragment = document.createDocumentFragment()
       let listCardBox = document.querySelector('.list-card-box ') 
       let test = document.querySelector('.test') 
 
@@ -477,9 +478,19 @@
     
 
 
-      data.forEach(function(item){
-        cardList.mountCard(item,listCardBox)
-      })
+      // data.forEach(function(item){
+      //   cardList.mountCard(item,listCardBox)
+      // })
+
+      
+      function mountCardDom(){
+        data.forEach(function(item){
+          let temp = cardList.mountCard(item)
+          fragment.appendChild(temp)
+        })
+        listCardBox.appendChild(fragment)
+      }
+      mountCardDom()
 
 
 

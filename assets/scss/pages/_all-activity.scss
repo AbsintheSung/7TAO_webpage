@@ -1,0 +1,10 @@
+.all-activity-pages{
+    li{
+        &:nth-child(2){
+            background-color: $primary-3;
+            a{
+                color:$primary-1 !important;
+            }
+        }
+    }
+}
