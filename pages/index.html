@@ -405,7 +405,7 @@
       //../assets/images/event/01.jpg
 
       const getSrc = (name) => {
-        if (typeof name === 'undefined') return 'error.png'
+        // if (typeof name === 'undefined') return 'error.png'
         const path = `/assets/images/event/01.jpg`
         const modules = import.meta.globEager('/assets/images/*')
         return modules[path]?.default
