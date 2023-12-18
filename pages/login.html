@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>index</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+
+    </style>
+  </head>
+  <body>
+    <!-- 導覽列 -->
+    <div class="container-fluid bg-primary-0 px-0 vh-100 d-flex flex-column justify-content-between">
+        <div class="container-fluid bg-primary-0 border-bottom border-primary-3 border-3 ">
+            <%- include('./layout/header'); -%>
+        </div>
+      
+        <div class="container-fluid bg-primary-0 ">
+
+            <div class="container">
+
+                <div class="row ">
+                    <div class="col-12 col-md-4 mx-auto ">
+                        <div class="user-login text-center">
+                            <img class="user-login__img" src="../assets/images/sparkler.png">
+                        </div>
+                        <h2 class="user-login__title fs-4 fw-bold text-center mt-3">會員登入</h2>
+                        
+                        <form class="pay-form noto-tc-serif" action="check.html">
+                            <div class="mb-3">
+                                <label for="userlogin" class="form-label ">帳號</label>
+                                <input type="text" class="form-control rounded-0 bg-primary-0 border-dark " id="userlogin" placeholder="請輸入帳號" aria-describedby="userloginHelp">
+                            </div>
+
+                            <div>
+                                <label for="userpassword" class="form-label">Email</label>
+                                <input type="password" class="form-control rounded-0 bg-primary-0 border-dark " id="userpassword" placeholder="請輸入密碼">
+                            </div>
+                            
+                            <div class="d-flex flex-column justify-content-center align-items-center ">
+                                <button type="submit" class="login-btn w-100 mt-4 mt-md-32 py-2 fs-5 fw-bold text-white bg-dark ">
+                                    登入<i class="icofont-rounded-double-right "></i>
+                                </button>
+                                <a href="index.html" class="login-cancel-btn mt-3 mb-5 mb-md-60">取消</a>
+                            </div>
+                        
+                        </form>
+
+
+                    </div>
+                </div> 
+
+            </div>
+
+        </div>
+      
+        
+        <div class="container-fluid bg-primary-0 border-top border-primary-3 border-2 ">
+            <%- include('./layout/footer'); -%>
+        </div>
+         
+
+    </div>
+  
+
+  
+    
+
+    <script type="module" src="../main.js"></script>
+    <script type="module">
+     
+
+    </script>
+  </body>
+</html>

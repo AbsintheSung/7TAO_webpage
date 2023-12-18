@@ -1,0 +1,19 @@
+.user-login{
+    &__img{
+        width: 32px;
+        height: 32px;
+       
+    }
+}
+.login-btn{
+    &:hover{
+        color: $primary-1 !important;
+    }
+}
+.login-cancel-btn{
+    color:$primary-3;
+    font-size: 20px;
+    &:hover{
+       text-decoration: underline;
+    }
+}

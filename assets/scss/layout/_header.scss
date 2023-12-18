@@ -1,0 +1,63 @@
+.logo-a{
+    width:53px;
+    height: 53px;
+    @include Small{
+      width: 40px;
+      height: 40px;
+    }
+
+  }
+
+.search-box{
+    width: 335px;
+    height: 55px;
+    &__input{
+        width: 100%;
+    }
+    &__button{
+        width: 55px;
+        @include Small{
+            width: 40px;
+        }
+    }
+
+    @include Small{
+        height: 40px;
+        width: 207px;
+    }
+}
+.nav-btn{
+    width: 54px;
+    height: 38px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.nav-btn:focus{
+    box-shadow: none !important;
+}
+.nav-btn:hover{
+box-shadow: 0 0 0 var(--bs-navbar-toggler-focus-width) !important;
+}
+
+.nav-position{
+    position: relative;
+    z-index: 2;
+   &__item{
+    width: 100%;
+    border-bottom: none !important;
+        @include Medium{
+            position: absolute; 
+            background-color: $primary-0;
+            top: 100%;
+            border-top: 3px solid black;
+            border-bottom: 3px solid black;
+        }
+
+   }
+}
+.nav-a:hover{
+    color: #9C9E18 !important;
+}

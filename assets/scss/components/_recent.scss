@@ -1,0 +1,19 @@
+
+.recent-text{
+    font-size: 64px;
+    @include Medium{
+        font-size: 48px;   
+    }
+    @include Small{
+        font-size: 24px;   
+    }
+}
+.recent-text2{
+    font-size: 32px;
+    @include Medium{
+        font-size: 24px;   
+    }
+    @include Small{
+        font-size: 16px;   
+    }
+}

@@ -1,0 +1,105 @@
+.home-img{
+    background-image: url('../../../assets/images/event/13.jpg');
+    width: 100%;
+    height: 100%;
+    height: 518px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    @include Small{
+        height: 350px;
+    }
+  }
+
+  //線上活動
+.online-img-box{
+    background-image:url('../../../assets/images/event/online.jpg');
+    background-repeat: no-repeat;
+    background-position: center 35%; //x y
+    background-size: cover;
+    height: 100%;
+    @include Large{
+        height: 317px;
+    }
+    @include Small{
+        height: 158px;
+    }
+}
+.online-content-box{
+    &__header{
+        >h2{
+            font-size: 32px;
+            @include Small{
+                font-size: 18px;
+            }
+        }
+    }
+}
+// .online-header-list{
+//     >li{
+//         border: 1px solid black;
+//         border-left: 4px solid black;
+//         margin-right: 8px;
+//     }
+//     li:hover{
+//         border-left: 4px solid $primary-1;
+//         background-color: $primary-3;
+//         >a{
+//             color:white !important;
+//         }
+//     }
+// }
+.online-content-box__footer{
+    >div{
+        >a:hover{
+            color: $primary-1 !important;
+            i{
+                color : $primary-1 !important;
+            }
+        }
+    }
+}
+
+
+//聯絡我們
+.contact-border{
+    border-right:none!important ;
+    @include Medium{
+        border-right:2px solid $primary-3 !important ;
+    }
+}
+.contact-left__footer{
+    li{
+        a:hover{
+            text-decoration:underline;
+            i{
+                color : $primary-1 !important
+            }
+        }
+    }
+}
+.contact-right{
+    a:hover{
+        color : $primary-1 !important;
+        i{
+            color : $primary-1 !important;
+        }
+    }
+}
+
+
+
+.slogan-content{
+    &__title{
+        @include Small{
+            font-size: 18px !important;
+        }
+    }
+    &__text{
+        @include Small{
+            font-size: 14px !important;
+        }
+    }
+}
+
+

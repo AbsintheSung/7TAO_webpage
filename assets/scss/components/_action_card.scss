@@ -1,0 +1,59 @@
+.action-box{
+    >li:nth-child(3){
+        .action-card{
+            transform:rotate(-2deg);
+        }
+    }
+    >li:nth-child(even){
+        .action-card{
+            transform:rotate(2deg);
+        }
+    }
+}
+.action-box-item{
+    position: relative;
+}
+.action-card{
+    border: 2px solid $primary-3;
+    height: 100% !important;
+    @include Medium{
+        width: 274px;
+        margin: 0 auto;
+    }
+    &__title{
+        position: absolute;
+        top:0%;
+        left: 50%;
+        transform:translate(-50%, -50%) rotate(-4deg);
+        background-color: white;
+        padding: 10px 16px;
+    }
+    &__link{
+        display: block;
+        padding: 16px;
+        padding-bottom: 48px;
+        @include Small{
+            padding: 12px;
+            padding-bottom: 32px;
+        }
+        img{
+            height: 274px;
+            width: 100%;
+            // width: 274px;
+            @include Small{
+                height: 267px;
+            }
+        }
+        p{
+            margin-top: 16px;
+            @include Small{
+                margin-top: 12px;
+            }
+        }
+    }
+    &__link:hover{
+        p{
+            text-decoration:underline;
+        }
+    }
+}

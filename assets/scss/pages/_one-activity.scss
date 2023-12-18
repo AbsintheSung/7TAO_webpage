@@ -1,0 +1,58 @@
+.date-box{
+    font-size: 48px;
+
+    @include Medium{
+        font-size: 20px;
+    }
+}
+.month-box{
+    margin-bottom: 100px;
+    @include Medium{
+        margin-bottom: 0px;
+    }
+}
+.time-box::before{
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 2px;
+    left: 50%;
+    top:40%;
+    transform: translateX(-50%) rotate(120deg);
+    background-color: black;
+    @include Medium{
+        width: 50px;
+        top:50%;
+    }
+}
+
+.one-activity{
+    &__title{
+        font-size: 60px;
+        @include Medium{
+            font-size: 40px;
+        }
+        @include Small{
+            font-size: 32px;
+        }
+    }
+    &__text{
+        font-size: 22px;
+        @include Small{
+            font-size: 16px;
+        }
+    }
+   
+}
+.table{
+    font-size: 16px;
+    @include Small{
+        font-size: 14px;
+    }
+}
+.buy-link:hover{
+    >a{
+        background-color: $primary-3;
+        color:$primary-1 !important;
+    }
+}

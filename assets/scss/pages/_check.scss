@@ -1,0 +1,36 @@
+.check-paybox{
+    &:first-child{
+        .pay-box__item{
+            background-color:$primary-3  ;
+            color:$primary-1 ;
+        }
+    }
+    &:nth-child(2){
+        .pay-box__item{
+            background-color:$primary-3  ;
+            color:$primary-1 ;
+        }
+    }
+}
+
+.check-imfo{
+    &__img{
+        text-align: center;
+        img{
+            width: 32px;
+            height: 32px;
+        }
+       
+    }
+}
+.check-pay{
+    input{
+        background-color: $primary-0;
+    }
+    input[type='radio']:checked{
+        background-color: $primary-3;
+        border-color: $primary-3;
+        box-shadow: 0 0 0 0rem rgba(0, 0, 0, 0);
+    }
+}
+  

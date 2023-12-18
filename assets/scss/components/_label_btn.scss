@@ -1,0 +1,15 @@
+.label-btn-list{
+    >li{
+        border: 1px solid black;
+        border-left: 4px solid black;
+        margin-right: 8px;
+        margin-bottom: 8px;
+    }
+    li:hover{
+        border-left: 4px solid $primary-1;
+        background-color: $primary-3;
+        >a{
+            color:white !important;
+        }
+    }
+}

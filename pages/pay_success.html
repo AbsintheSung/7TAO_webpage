@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>index</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+
+    </style>
+  </head>
+  <body>
+    <!-- 導覽列 -->
+    <div class="container-fluid bg-primary-0 px-0 vh-100 d-flex flex-column">
+        <div class="container-fluid bg-primary-0 border-bottom border-primary-3 border-3 ">
+            <%- include('./layout/header'); -%>
+        </div>
+      
+        <div class="container-fluid bg-primary-0 ">
+
+            <div class="container">
+
+                <div class="row ">
+                    <div class="col-md-6 mx-auto">
+
+                        <div class="pay-list  mt-4 mt-md-60 d-flex align-items-center justify-content-between noto-tc-serif fw-bold">
+                           
+                            <div class="pay-box pay-success-style">
+                                <div class="pay-box__item">
+                                    <i class="icofont-verification-check"></i>
+                                </div>
+                                <p class="mt-1 mt-md-2">訂單確認</p>
+                            </div>
+
+                            <div class="pay-box pay-success-style">
+                                <div  class="pay-box__item">
+                                    <i class="icofont-verification-check"></i>
+                                </div>
+                                <p class="mt-1 mt-md-2">結帳付款</p>
+                            </div>
+                            
+                            <div class="pay-box pay-success-style">
+                                <div  class="pay-box__item">3</div>
+                                <p class="mt-1 mt-md-2">訂購結果</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="d-flex flex-column justify-content-center align-items-center mt-32 mt-md-5 mb-32">
+                    <div class="pay-success-tick">
+                        <i class="icofont-verification-check"></i>
+                    </div>
+                    <h1 class="pay-success-title fw-bold noto-tc-serif">訂購成功</h1>
+                </div>
+                
+
+                <table class="table pay-table noto-tc-serif  mx-auto">
+                    <thead>
+                        <tr>
+                            <th scope="col"></th>
+                            <th scope="col"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="border-top border-3 border-dark" >
+                            <th scope="row" class="fw-bold">訂單編號</th>
+                            <td class="text-end">892746123</td>
+                        </tr>
+                        <tr class="border-top border-1 border-dark" >
+                            <th scope="row" class="fw-bold">訂購時間</th>
+                            <td class="text-end">2023/04/28 14:30</td>
+                        </tr>
+                        <tr class="border-top border-1 border-dark" >
+                            <th scope="row" class="fw-bold">票券</th>
+                            <td class="text-end">改頭換面票(含大改造) $8000</td>
+                        </tr>
+                        <tr class="border-top border-1 border-dark" >
+                            <th scope="row" class="fw-bold">取票序號</th>
+                            <td class="text-end text-danger">95G54J4434</td>
+                        </tr>
+                        <tr class="border-bottom border-top border-1 border-dark">
+                            <th scope="row" class="fw-bold">取票號碼</th>
+                            <td class="text-end text-danger">04597101</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+
+                <div class="row mt-3">
+
+                    <div class="col-12 col-md-6 mx-auto noto-tc-serif">
+                        <p class="my-1">  請至 7-Eleven 完成取票，請於 ibon 點選【購票/取票/訂房&gt;【售票系統】&gt;【取票】&gt;【拓元售票系統】。</p>
+                        <p class="my-1"> 若您未前往取票，本筆交易仍視為完成，不可取消訂單。</p>
+                        <p class="my-1"> 若需退票，請按照退票辦法進行申請。</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+      
+        
+        <div class="container-fluid bg-primary-0 border-top border-primary-3 border-2 mt-auto">
+            <%- include('./layout/footer'); -%>
+        </div>
+         
+
+    </div>
+  
+
+  
+    
+
+    <script type="module" src="../main.js"></script>
+    <script type="module">
+     
+
+    </script>
+  </body>
+</html>
