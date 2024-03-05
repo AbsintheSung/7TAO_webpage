@@ -25,7 +25,12 @@
         top:50%;
     }
 }
+.activity-imgbox{
+    @include Medium{
+        height: 370px;
+    }
 
+}
 .one-activity{
     &__title{
         font-size: 60px;
